@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@100&family=Roboto+Mono:wght@100&family=Source+Sans+Pro:wght@200&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style2.css">
 </head>
 
 <body>
@@ -39,8 +39,8 @@
 
                     <!--DARK BUTTON-->
                     <div class="container2">
-                        <input type="checkbox" id="btn" name="btn">
-                        <label for="btn"></label>
+                        <input type="checkbox" id="btn" name="btn" hidden>
+                        <label for="btn" id="btn" class="label"></label>
                     </div>
 
                     <div class="navbar-dropdown">
@@ -102,6 +102,7 @@
                         </div>
                     </div>
                 </div>
+                </header>
                 <div class="column is-9">
                     <section class="section">
                         <div class="container">
@@ -110,28 +111,48 @@
                                     <p class="card-header-title">
                                         Contato
                                     </p>
-                                    </button>
-                                </header>
-                                    <div class="card-content">
-                                        <div class="field">
-                                            <h4>Email</h4>
-                                            <p class="control has-icons-left has-icons-right">
-                                                <input class="input" type="email" placeholder="Email">
-                                                <span class="icon is-small is-left">
-                                                    <i class="fas fa-envelope"></i>
-                                                </span>
-                                        </div>
-                                        <div>
-                                            <h4>Mensagem</h4>
-                                            <textarea class="textarea is-primary"
-                                                placeholder="Digite a sua mensagem"></textarea>
-                                        </div>
-                                        <button class="button is-primary" style="margin-top: 10px;">Enviar</button>
-                                    </div>
                             </div>
+                        </div>
+
+                        <!--Formulário-->
+                        <form action="https://api.staticforms.xyz/submit" method="post">
+                            <input type="hidden" name="accessKey" value="69b1556c-33be-4db6-b81f-900ea5dbd5d1">
+                            <!--Sem redirecionamento-->
+                            <div class="field">
+                                <label class="label2">Name</label>
+                                <div class="control">
+                                  <input class="input" type="text" name="name" placeholder="Text input">
+                                </div>
+                              </div>
+                            
+                              <div class="field">
+                                <label class="label2">Email</label>
+                                <div class="control has-icons-left has-icons-right">
+                                  <input class="input is-danger" type="email" name="email" placeholder="Informe um email válido" value="">
+                                  <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                  </span>
+                                  <span class="icon is-small is-right">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                  </span>
+                                </div>
+                                <p class="help is-danger">This email is invalid</p>
+                            </div>
+                            
+                              <div class="field">
+                                <label class="label2">Message</label>
+                                <div class="control">
+                                  <textarea class="textarea" name="message" placeholder="Digite sua mensagem"></textarea>
+                                </div>
+                              </div>
+                            
+                              <div class="field is-grouped">
+                                <div class="control">
+                                  <button class="button is-link" type="submit" value="Submit">Submit</button>
+                                </div>
+                        </form>
                     </section>
-                </div>
-<script src="../JavaScript/script.js" defer></script>
+                    <script src="../JavaScript/script.js" defer></script>
 </body>
 
 </html>

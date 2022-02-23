@@ -48,3 +48,19 @@ body.dark label{
 input{
     visibility: hidden;
 }
+
+
+/*BARRA DE ROLAGEM */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ff0043;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 30px;
+}

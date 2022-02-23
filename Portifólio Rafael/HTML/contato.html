@@ -86,7 +86,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <span class="tag is-dark is-medium">Estagiário em Infraestrutura de TI</span>
+                            <span class="tag is-dark is-medium">Técnico em TI</span>
                             <div class="content">
                                 <br>
                                 <p>(00) 00000-0000</p>
@@ -108,49 +108,63 @@
                         <div class="container">
                             <div class="card">
                                 <header class="card-header">
-                                    <p class="card-header-title">
-                                        Contato
-                                    </p>
+                                    <div class="wrapper">
+                                        <div class="digitacao-simples">
+                                            <p class="card-header-title">
+                                                Contato
+                                            </p>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
 
-                        <!--Formulário-->
-                        <form action="https://api.staticforms.xyz/submit" method="post">
-                            <input type="hidden" name="accessKey" value="69b1556c-33be-4db6-b81f-900ea5dbd5d1">
-                            <!--Sem redirecionamento-->
-                            <div class="field">
-                                <label class="label2">Name</label>
-                                <div class="control">
-                                  <input class="input" type="text" name="name" placeholder="Text input">
-                                </div>
-                              </div>
-                            
-                              <div class="field">
-                                <label class="label2">Email</label>
-                                <div class="control has-icons-left has-icons-right">
-                                  <input class="input is-danger" type="email" name="email" placeholder="Informe um email válido" value="">
-                                  <span class="icon is-small is-left">
-                                    <i class="fas fa-envelope"></i>
-                                  </span>
-                                  <span class="icon is-small is-right">
-                                    <i class="fas fa-exclamation-triangle"></i>
-                                  </span>
-                                </div>
-                                <p class="help is-danger">This email is invalid</p>
+                        
+                        <div class="form__group field">
+                            <input type="input" class="form__field" name="name" placeholder="Name" id="name" required>
+                            <label class="label2" class="form__label">Name</label>
                             </div>
+
+<!--Formulário-->
+                            <div class="container">
+                                <div class="card">
+                            <div class="card-content">
+                            <div class="content">
+                            <form action="https://api.staticforms.xyz/submit" method="post">
+                                <input type="hidden" name="accessKey" value="69b1556c-33be-4db6-b81f-900ea5dbd5d1">
+<!--Sem redirecionamento-->
+                                
+
+
+                                    <div class="control">
+                                <div class="field">
+                                    <label class="label2">Email</label>
+                                    <p class="control has-icons-left has-icons-right">
+                                      <input class="input" type="email" placeholder="Email" required>
+                                      <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                      </span>
+                                      <span class="icon is-small is-right">
+                                        <i class="fas fa-check"></i>
+                                      </span>
+                                    </p>
+                                  </div>
+                                
+                                  <div class="field">
+                                    <label class="label2">Message</label>
+                                    <div class="control">
+                                      <textarea class="textarea" name="message" placeholder="Digite sua mensagem" required></textarea>
+                                    </div>
+                                  </div>
                             
-                              <div class="field">
-                                <label class="label2">Message</label>
-                                <div class="control">
-                                  <textarea class="textarea" name="message" placeholder="Digite sua mensagem"></textarea>
+                                  <div class="field is-grouped">
+                                    <div class="control">
+                                      <button class="button is-link" type="submit" value="Submit">Send</button>
+                                    </div>
                                 </div>
-                              </div>
-                            
-                              <div class="field is-grouped">
-                                <div class="control">
-                                  <button class="button is-link" type="submit" value="Submit">Submit</button>
-                                </div>
-                        </form>
+                            </div>
+                        </div>
+                            </form>
+                        </section>
                     </section>
                     <script src="../JavaScript/script.js" defer></script>
 </body>

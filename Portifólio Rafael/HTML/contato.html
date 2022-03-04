@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@100&family=Roboto+Mono:wght@100&family=Source+Sans+Pro:wght@200&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../CSS/style2.css">
+    <link rel="stylesheet" href="/CSS">
 </head>
 
 <body>
@@ -115,42 +116,34 @@
                         </div>
 
                         <!--Formulário-->
-                        <form action="https://api.staticforms.xyz/submit" method="post">
-                            <input type="hidden" name="accessKey" value="69b1556c-33be-4db6-b81f-900ea5dbd5d1">
-                            <!--Sem redirecionamento-->
-                            <div class="field">
-                                <label class="label2">Name</label>
-                                <div class="control">
-                                  <input class="input" type="text" name="name" placeholder="Text input">
-                                </div>
-                              </div>
+                        <div class="login-box">
+                            <form>
+                                <input type="hidden" name="accessKey" value="69b1556c-33be-4db6-b81f-900ea5dbd5d1">
+                                <!--Sem redirecionamento-->
+                                <div class="user-box">
+                                      <input type="text" name="" required="">
+                                      <label>Nome</label>
+                                  </div>
                             
-                              <div class="field">
-                                <label class="label2">Email</label>
-                                <div class="control has-icons-left has-icons-right">
-                                  <input class="input is-danger" type="email" name="email" placeholder="Informe um email válido" value="">
-                                  <span class="icon is-small is-left">
-                                    <i class="fas fa-envelope"></i>
-                                  </span>
-                                  <span class="icon is-small is-right">
-                                    <i class="fas fa-exclamation-triangle"></i>
-                                  </span>
+                                  <div class="user-box">
+                                    <input type="email" name="" required="">
+                                    <label>Email</label>
                                 </div>
-                                <p class="help is-danger">This email is invalid</p>
-                            </div>
                             
-                              <div class="field">
-                                <label class="label2">Message</label>
-                                <div class="control">
-                                  <textarea class="textarea" name="message" placeholder="Digite sua mensagem"></textarea>
+                                <div class="user-box">
+                                    <textarea name="" required=""></textarea>
+                                    <label>Mensagem</label>
                                 </div>
-                              </div>
-                            
-                              <div class="field is-grouped">
-                                <div class="control">
-                                  <button class="button is-link" type="submit" value="Submit">Submit</button>
-                                </div>
-                        </form>
+                                
+                                <a href="">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                ENVIAR
+                                </a>
+                            </form>
+                        </div>
                     </section>
                     <script src="../JavaScript/script.js" defer></script>
 </body>

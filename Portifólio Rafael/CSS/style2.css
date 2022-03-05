@@ -3,12 +3,6 @@ body{
 }
 
 
-body.dark{
-    background-color: black;
-    color: white;
-}
-
-
 .section{
     margin: 0;
     padding: 0;
@@ -18,10 +12,19 @@ body.dark{
 
 .navbar{
     margin-bottom: 40px;
+    background: rgba(20, 20, 20, 0.45);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.navbar-item{
+    color: rgb(224, 224, 224);
 }
 
 .card{
     margin-bottom: 20px;
+    background-color: rgb(10, 7, 7);
+    color: white;
 }
 
 .container2{
@@ -50,10 +53,6 @@ body.dark{
     cursor: pointer;
     user-select: none;
     transition: background 0.5s linear;
-}
-
-body.dark .label{
-    background-color: rgb(216, 216, 216);
 }
 
 

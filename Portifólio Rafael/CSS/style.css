@@ -2,11 +2,6 @@ body{
     background: linear-gradient(#000000, #434343);
 }
 
-body.dark{
-    background-color: black;
-    color: white;
-}
-
 
 .section{
     margin: 0;
@@ -20,6 +15,10 @@ body.dark{
     background: rgba(20, 20, 20, 0.45);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur(4px);
+}
+
+.navbar-item{
+    color: rgb(224, 224, 224);
 }
 
 .card{
@@ -45,9 +44,6 @@ label{
     transition: background 0.5s linear;
 }
 
-body.dark label{
-    background-color: rgb(216, 216, 216);
-}
 
 input{
     visibility: hidden;
